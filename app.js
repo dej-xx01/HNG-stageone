@@ -23,7 +23,7 @@ testIds.forEach(testId =>{
         testId.textContent = profile.track
     }else if (testId.dataset.testid == "currentDayOfTheWeek"){
         testId.textContent = daysOfWeek[new Date().getDay()]
-    }else{
+    }else if (testId.dataset.testid == "currentUTCTime"){
         testId.textContent = new Date().getTime()
     }
 })
